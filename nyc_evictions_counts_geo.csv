@@ -1,4 +1,4 @@
-City,Count_of_Evictions,Latitude,Longitude
+Neighborhood,Count_of_Evictions,Latitude,Longitude
 "Bronx, NY",21190,40.8466508,-73.8785937
 "Brooklyn, NY",17364,40.6501038,-73.9495823
 "New York, NY",7987,40.7127281,-74.0060152
