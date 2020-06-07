@@ -1,0 +1,975 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_0f70881568084ddf90507a76af527e2e {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_0f70881568084ddf90507a76af527e2e" ></div>
+        
+</body>
+<script>    
+    
+            var map_0f70881568084ddf90507a76af527e2e = L.map(
+                "map_0f70881568084ddf90507a76af527e2e",
+                {
+                    center: [40.70065670000001, -73.7284647],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_3f751e5ef9e945288f3bbdc7e0143d8f = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_0f70881568084ddf90507a76af527e2e);
+        
+    
+            var circle_c7d0e0602cf74a53bcabf79494ea78c6 = L.circle(
+                [40.8466508, -73.87859370000002],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1835.813525010324, "stroke": true, "weight": 3}
+            ).addTo(map_0f70881568084ddf90507a76af527e2e);
+        
+    
+        var popup_6434d5a2ea9349eb859e18eb151a9908 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_50112e26dbb342cc9eb9ba495bc66984 = $(`<div id="html_50112e26dbb342cc9eb9ba495bc66984" style="width: 100.0%; height: 100.0%;">Neighborhood: Bronx, NY,  Evictions per Capita: 15.30</div>`)[0];
+            popup_6434d5a2ea9349eb859e18eb151a9908.setContent(html_50112e26dbb342cc9eb9ba495bc66984);
+        
+
+        circle_c7d0e0602cf74a53bcabf79494ea78c6.bindPopup(popup_6434d5a2ea9349eb859e18eb151a9908)
+        ;
+
+        
+    
+    
+            var circle_8b3f95d95fea40ef83fcd577baf7a8cb = L.circle(
+                [40.6501038, -73.9495823],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 831.9076807970292, "stroke": true, "weight": 3}
+            ).addTo(map_0f70881568084ddf90507a76af527e2e);
+        
+    
+        var popup_a0bfe760f58c4950ae00e2da79796525 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_09ab42f5565b4c388b5e209de1392270 = $(`<div id="html_09ab42f5565b4c388b5e209de1392270" style="width: 100.0%; height: 100.0%;">Neighborhood: Brooklyn, NY,  Evictions per Capita: 6.93</div>`)[0];
+            popup_a0bfe760f58c4950ae00e2da79796525.setContent(html_09ab42f5565b4c388b5e209de1392270);
+        
+
+        circle_8b3f95d95fea40ef83fcd577baf7a8cb.bindPopup(popup_a0bfe760f58c4950ae00e2da79796525)
+        ;
+
+        
+    
+    
+            var circle_bf16af8a130f49c7a2fa5c9f3ab5be34 = L.circle(
+                [40.7127281, -74.0060152],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 604.3611310615668, "stroke": true, "weight": 3}
+            ).addTo(map_0f70881568084ddf90507a76af527e2e);
+        
+    
+        var popup_37d0721351eb4f278dc0ae5de75164eb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_12fcb32f1bbf45d3afbd2265b25ca1af = $(`<div id="html_12fcb32f1bbf45d3afbd2265b25ca1af" style="width: 100.0%; height: 100.0%;">Neighborhood: New York, NY,  Evictions per Capita: 5.04</div>`)[0];
+            popup_37d0721351eb4f278dc0ae5de75164eb.setContent(html_12fcb32f1bbf45d3afbd2265b25ca1af);
+        
+
+        circle_bf16af8a130f49c7a2fa5c9f3ab5be34.bindPopup(popup_37d0721351eb4f278dc0ae5de75164eb)
+        ;
+
+        
+    
+    
+            var circle_1ff010a4ba0e4e008b0b95903d03cef4 = L.circle(
+                [40.6914852, -73.8056771],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4706.145001953453, "stroke": true, "weight": 3}
+            ).addTo(map_0f70881568084ddf90507a76af527e2e);
+        
+    
+        var popup_eb6d1eb77c4b44ddb02fb1b9c4e066fb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c4b716bb8f664c6d9289e1f9b9bb92ed = $(`<div id="html_c4b716bb8f664c6d9289e1f9b9bb92ed" style="width: 100.0%; height: 100.0%;">Neighborhood: Jamaica, NY,  Evictions per Capita: 39.22</div>`)[0];
+            popup_eb6d1eb77c4b44ddb02fb1b9c4e066fb.setContent(html_c4b716bb8f664c6d9289e1f9b9bb92ed);
+        
+
+        circle_1ff010a4ba0e4e008b0b95903d03cef4.bindPopup(popup_eb6d1eb77c4b44ddb02fb1b9c4e066fb)
+        ;
+
+        
+    
+    
+            var circle_734a571898a54d9d84fad8eb3b71634f = L.circle(
+                [40.5834557, -74.14960479999998],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 523.7983487295458, "stroke": true, "weight": 3}
+            ).addTo(map_0f70881568084ddf90507a76af527e2e);
+        
+    
+        var popup_c88539a37d674d2688d55ec394ac20f6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ff8cd0e4d5b745119f79afeea8a37c17 = $(`<div id="html_ff8cd0e4d5b745119f79afeea8a37c17" style="width: 100.0%; height: 100.0%;">Neighborhood: Staten Island, NY,  Evictions per Capita: 4.36</div>`)[0];
+            popup_c88539a37d674d2688d55ec394ac20f6.setContent(html_ff8cd0e4d5b745119f79afeea8a37c17);
+        
+
+        circle_734a571898a54d9d84fad8eb3b71634f.bindPopup(popup_c88539a37d674d2688d55ec394ac20f6)
+        ;
+
+        
+    
+    
+            var circle_392ad457028240ae98512c8b470ee8cd = L.circle(
+                [40.60538250000001, -73.75513259999998],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1918.8806529524443, "stroke": true, "weight": 3}
+            ).addTo(map_0f70881568084ddf90507a76af527e2e);
+        
+    
+        var popup_0175606b27b24fcaaf254445b4689add = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cf76fb97cb2b4169a72d7a76067bb27f = $(`<div id="html_cf76fb97cb2b4169a72d7a76067bb27f" style="width: 100.0%; height: 100.0%;">Neighborhood: Far Rockaway, NY,  Evictions per Capita: 15.99</div>`)[0];
+            popup_0175606b27b24fcaaf254445b4689add.setContent(html_cf76fb97cb2b4169a72d7a76067bb27f);
+        
+
+        circle_392ad457028240ae98512c8b470ee8cd.bindPopup(popup_0175606b27b24fcaaf254445b4689add)
+        ;
+
+        
+    
+    
+            var circle_68558a0da6b949f2a0646b9f90051e37 = L.circle(
+                [40.7654301, -73.8174291],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1449.8389067881349, "stroke": true, "weight": 3}
+            ).addTo(map_0f70881568084ddf90507a76af527e2e);
+        
+    
+        var popup_4193d67ad0e642bd9acfa08fe99a7f03 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b018498bc38f41e1a159fbaf86ab6809 = $(`<div id="html_b018498bc38f41e1a159fbaf86ab6809" style="width: 100.0%; height: 100.0%;">Neighborhood: Flushing, NY,  Evictions per Capita: 12.08</div>`)[0];
+            popup_4193d67ad0e642bd9acfa08fe99a7f03.setContent(html_b018498bc38f41e1a159fbaf86ab6809);
+        
+
+        circle_68558a0da6b949f2a0646b9f90051e37.bindPopup(popup_4193d67ad0e642bd9acfa08fe99a7f03)
+        ;
+
+        
+    
+    
+            var circle_bed68616258140f0b9aac4b9d5cdae0e = L.circle(
+                [40.7469593, -73.8601456],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1365.2918935793818, "stroke": true, "weight": 3}
+            ).addTo(map_0f70881568084ddf90507a76af527e2e);
+        
+    
+        var popup_9aaa5dda283c40d0b5265390b70b57f9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_262deedabd8344e8b942983a5c0379f6 = $(`<div id="html_262deedabd8344e8b942983a5c0379f6" style="width: 100.0%; height: 100.0%;">Neighborhood: Corona, NY,  Evictions per Capita: 11.38</div>`)[0];
+            popup_9aaa5dda283c40d0b5265390b70b57f9.setContent(html_262deedabd8344e8b942983a5c0379f6);
+        
+
+        circle_bed68616258140f0b9aac4b9d5cdae0e.bindPopup(popup_9aaa5dda283c40d0b5265390b70b57f9)
+        ;
+
+        
+    
+    
+            var circle_80cbc4ff22a94938885d9d44c41e21f6 = L.circle(
+                [40.7720145, -73.9302673],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 857.4365743149771, "stroke": true, "weight": 3}
+            ).addTo(map_0f70881568084ddf90507a76af527e2e);
+        
+    
+        var popup_b4bcedc35ee24d339f39e1c54e2ce2b8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_57994ab9f6824bd98bae8f9a8e78b673 = $(`<div id="html_57994ab9f6824bd98bae8f9a8e78b673" style="width: 100.0%; height: 100.0%;">Neighborhood: Astoria, NY,  Evictions per Capita: 7.15</div>`)[0];
+            popup_b4bcedc35ee24d339f39e1c54e2ce2b8.setContent(html_57994ab9f6824bd98bae8f9a8e78b673);
+        
+
+        circle_80cbc4ff22a94938885d9d44c41e21f6.bindPopup(popup_b4bcedc35ee24d339f39e1c54e2ce2b8)
+        ;
+
+        
+    
+    
+            var circle_4a5e9a4ada73458394d39cf9001b3f8d = L.circle(
+                [40.7080556, -73.9141667],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 739.2126029689687, "stroke": true, "weight": 3}
+            ).addTo(map_0f70881568084ddf90507a76af527e2e);
+        
+    
+        var popup_63d1f9c569a64aa39f9b561db547ab27 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_989ab69df7d645c68afb4df4ea198905 = $(`<div id="html_989ab69df7d645c68afb4df4ea198905" style="width: 100.0%; height: 100.0%;">Neighborhood: Ridgewood, NY,  Evictions per Capita: 6.16</div>`)[0];
+            popup_63d1f9c569a64aa39f9b561db547ab27.setContent(html_989ab69df7d645c68afb4df4ea198905);
+        
+
+        circle_4a5e9a4ada73458394d39cf9001b3f8d.bindPopup(popup_63d1f9c569a64aa39f9b561db547ab27)
+        ;
+
+        
+    
+    
+            var circle_6d9e4ca164684938a1e1090a9563b4f4 = L.circle(
+                [40.72676920000001, -73.7415208],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 943.9280816699679, "stroke": true, "weight": 3}
+            ).addTo(map_0f70881568084ddf90507a76af527e2e);
+        
+    
+        var popup_77449e5bf28b404cabcbf9c022216eb3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a7dcd798e8354a2197a2c12280aad4d8 = $(`<div id="html_a7dcd798e8354a2197a2c12280aad4d8" style="width: 100.0%; height: 100.0%;">Neighborhood: Queens Village, NY,  Evictions per Capita: 7.87</div>`)[0];
+            popup_77449e5bf28b404cabcbf9c022216eb3.setContent(html_a7dcd798e8354a2197a2c12280aad4d8);
+        
+
+        circle_6d9e4ca164684938a1e1090a9563b4f4.bindPopup(popup_77449e5bf28b404cabcbf9c022216eb3)
+        ;
+
+        
+    
+    
+            var circle_f939b93869854e38a0aecd45f489e918 = L.circle(
+                [40.5934173, -73.7895462],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3742.8323197219815, "stroke": true, "weight": 3}
+            ).addTo(map_0f70881568084ddf90507a76af527e2e);
+        
+    
+        var popup_9782f237649c4d3892f4b25e5b687320 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3575e338463c4765a4b05592f1c1bfe6 = $(`<div id="html_3575e338463c4765a4b05592f1c1bfe6" style="width: 100.0%; height: 100.0%;">Neighborhood: Arverne, NY,  Evictions per Capita: 31.19</div>`)[0];
+            popup_9782f237649c4d3892f4b25e5b687320.setContent(html_3575e338463c4765a4b05592f1c1bfe6);
+        
+
+        circle_f939b93869854e38a0aecd45f489e918.bindPopup(popup_9782f237649c4d3892f4b25e5b687320)
+        ;
+
+        
+    
+    
+            var circle_6fb8684c98da41c09170ee702e8da05c = L.circle(
+                [40.67677, -73.84374609999998],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1992.8892215568865, "stroke": true, "weight": 3}
+            ).addTo(map_0f70881568084ddf90507a76af527e2e);
+        
+    
+        var popup_b8f4b72ff7204b81b4b5ad1e5151e928 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_aa640e30a4de462c9dd589388dd90354 = $(`<div id="html_aa640e30a4de462c9dd589388dd90354" style="width: 100.0%; height: 100.0%;">Neighborhood: Ozone Park, NY,  Evictions per Capita: 16.61</div>`)[0];
+            popup_b8f4b72ff7204b81b4b5ad1e5151e928.setContent(html_aa640e30a4de462c9dd589388dd90354);
+        
+
+        circle_6fb8684c98da41c09170ee702e8da05c.bindPopup(popup_b8f4b72ff7204b81b4b5ad1e5151e928)
+        ;
+
+        
+    
+    
+            var circle_c9c4713e228c40c18d485c1e1776c6f2 = L.circle(
+                [40.7365804, -73.8783932],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 465.46869168918994, "stroke": true, "weight": 3}
+            ).addTo(map_0f70881568084ddf90507a76af527e2e);
+        
+    
+        var popup_c5f335d196be46eba1dac312369d6ecd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_41321f3de5654ebf8ba6ed0018345c73 = $(`<div id="html_41321f3de5654ebf8ba6ed0018345c73" style="width: 100.0%; height: 100.0%;">Neighborhood: Elmhurst, NY,  Evictions per Capita: 3.88</div>`)[0];
+            popup_c5f335d196be46eba1dac312369d6ecd.setContent(html_41321f3de5654ebf8ba6ed0018345c73);
+        
+
+        circle_c9c4713e228c40c18d485c1e1776c6f2.bindPopup(popup_c5f335d196be46eba1dac312369d6ecd)
+        ;
+
+        
+    
+    
+            var circle_50df8651b57b4fafa9713f0e7c95dae9 = L.circle(
+                [40.678159, -73.746521],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2102.3305652290383, "stroke": true, "weight": 3}
+            ).addTo(map_0f70881568084ddf90507a76af527e2e);
+        
+    
+        var popup_25786fe617f74ea49aa55f49c36e9d87 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6cc895bfbf1542d9aedda7cc20111e4c = $(`<div id="html_6cc895bfbf1542d9aedda7cc20111e4c" style="width: 100.0%; height: 100.0%;">Neighborhood: Springfield Gardens, NY,  Evictions per Capita: 17.52</div>`)[0];
+            popup_25786fe617f74ea49aa55f49c36e9d87.setContent(html_6cc895bfbf1542d9aedda7cc20111e4c);
+        
+
+        circle_50df8651b57b4fafa9713f0e7c95dae9.bindPopup(popup_25786fe617f74ea49aa55f49c36e9d87)
+        ;
+
+        
+    
+    
+            var circle_c5ddad5637384460b96c72b0a00f3986 = L.circle(
+                [40.7556561, -73.8857755],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 353.94629780309197, "stroke": true, "weight": 3}
+            ).addTo(map_0f70881568084ddf90507a76af527e2e);
+        
+    
+        var popup_2b4518197e5a4dd0aea838864d094b4b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_655cf1c516c84895affc9aaaa2679091 = $(`<div id="html_655cf1c516c84895affc9aaaa2679091" style="width: 100.0%; height: 100.0%;">Neighborhood: Jackson Heights, NY,  Evictions per Capita: 2.95</div>`)[0];
+            popup_2b4518197e5a4dd0aea838864d094b4b.setContent(html_655cf1c516c84895affc9aaaa2679091);
+        
+
+        circle_c5ddad5637384460b96c72b0a00f3986.bindPopup(popup_2b4518197e5a4dd0aea838864d094b4b)
+        ;
+
+        
+    
+    
+            var circle_d09cd355a6894851b6ceeb82ca1cf3e3 = L.circle(
+                [40.7453798, -73.9054145],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 811.5479278919711, "stroke": true, "weight": 3}
+            ).addTo(map_0f70881568084ddf90507a76af527e2e);
+        
+    
+        var popup_b69ebe3320f34152b8d1fc4296ea0498 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d9bbde27e0d547cf8ff6cd6f6116ec67 = $(`<div id="html_d9bbde27e0d547cf8ff6cd6f6116ec67" style="width: 100.0%; height: 100.0%;">Neighborhood: Woodside, NY,  Evictions per Capita: 6.76</div>`)[0];
+            popup_b69ebe3320f34152b8d1fc4296ea0498.setContent(html_d9bbde27e0d547cf8ff6cd6f6116ec67);
+        
+
+        circle_d09cd355a6894851b6ceeb82ca1cf3e3.bindPopup(popup_b69ebe3320f34152b8d1fc4296ea0498)
+        ;
+
+        
+    
+    
+            var circle_e65b2f56b8fa40d28664d28f18a415c6 = L.circle(
+                [40.6984364, -73.7606881],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 728.4999897104522, "stroke": true, "weight": 3}
+            ).addTo(map_0f70881568084ddf90507a76af527e2e);
+        
+    
+        var popup_888eafb4d7414eaaa66b82b410d5d667 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b9a562ebdfbb424bbda38f72c2faadab = $(`<div id="html_b9a562ebdfbb424bbda38f72c2faadab" style="width: 100.0%; height: 100.0%;">Neighborhood: Saint Albans, NY,  Evictions per Capita: 6.07</div>`)[0];
+            popup_888eafb4d7414eaaa66b82b410d5d667.setContent(html_b9a562ebdfbb424bbda38f72c2faadab);
+        
+
+        circle_e65b2f56b8fa40d28664d28f18a415c6.bindPopup(popup_888eafb4d7414eaaa66b82b410d5d667)
+        ;
+
+        
+    
+    
+            var circle_2c95228a7c804563b3ff6bb1d3d20112 = L.circle(
+                [40.6701035, -73.8190231],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 430.1642109702418, "stroke": true, "weight": 3}
+            ).addTo(map_0f70881568084ddf90507a76af527e2e);
+        
+    
+        var popup_7af85fcb961144739dd95c45db575255 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_56316a9d917a4e4db27dd4e2d416b29f = $(`<div id="html_56316a9d917a4e4db27dd4e2d416b29f" style="width: 100.0%; height: 100.0%;">Neighborhood: South Ozone Park, NY,  Evictions per Capita: 3.58</div>`)[0];
+            popup_7af85fcb961144739dd95c45db575255.setContent(html_56316a9d917a4e4db27dd4e2d416b29f);
+        
+
+        circle_2c95228a7c804563b3ff6bb1d3d20112.bindPopup(popup_7af85fcb961144739dd95c45db575255)
+        ;
+
+        
+    
+    
+            var circle_1fdc6945ee9548e694f056997b0310c9 = L.circle(
+                [40.7134361, -73.7670772],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1486.0131234890719, "stroke": true, "weight": 3}
+            ).addTo(map_0f70881568084ddf90507a76af527e2e);
+        
+    
+        var popup_4242924922054bbeb0ef12ce856a950d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4994ca41f2ea4800b382b8fe31d24757 = $(`<div id="html_4994ca41f2ea4800b382b8fe31d24757" style="width: 100.0%; height: 100.0%;">Neighborhood: Hollis, NY,  Evictions per Capita: 12.38</div>`)[0];
+            popup_4242924922054bbeb0ef12ce856a950d.setContent(html_4994ca41f2ea4800b382b8fe31d24757);
+        
+
+        circle_1fdc6945ee9548e694f056997b0310c9.bindPopup(popup_4242924922054bbeb0ef12ce856a950d)
+        ;
+
+        
+    
+    
+            var circle_06e5022772464c409642a77b2649c529 = L.circle(
+                [40.7348246, -73.79346679999998],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1583.2023355041547, "stroke": true, "weight": 3}
+            ).addTo(map_0f70881568084ddf90507a76af527e2e);
+        
+    
+        var popup_05daba4f54e34b10b51d3f8eb733a9cf = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c4d748209bfa4015a41ca50ffcf0cc9f = $(`<div id="html_c4d748209bfa4015a41ca50ffcf0cc9f" style="width: 100.0%; height: 100.0%;">Neighborhood: Fresh Meadows, NY,  Evictions per Capita: 13.19</div>`)[0];
+            popup_05daba4f54e34b10b51d3f8eb733a9cf.setContent(html_c4d748209bfa4015a41ca50ffcf0cc9f);
+        
+
+        circle_06e5022772464c409642a77b2649c529.bindPopup(popup_05daba4f54e34b10b51d3f8eb733a9cf)
+        ;
+
+        
+    
+    
+            var circle_9433ace8f2ae40c8ad98a20ab1867950 = L.circle(
+                [40.6620479, -73.7354097],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1101.224913218689, "stroke": true, "weight": 3}
+            ).addTo(map_0f70881568084ddf90507a76af527e2e);
+        
+    
+        var popup_ebdc37f1c74e48418aa6e069544c2834 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8be1bc62bcb24e4d8ca64ea5e6440a83 = $(`<div id="html_8be1bc62bcb24e4d8ca64ea5e6440a83" style="width: 100.0%; height: 100.0%;">Neighborhood: Rosedale, NY,  Evictions per Capita: 9.18</div>`)[0];
+            popup_ebdc37f1c74e48418aa6e069544c2834.setContent(html_8be1bc62bcb24e4d8ca64ea5e6440a83);
+        
+
+        circle_9433ace8f2ae40c8ad98a20ab1867950.bindPopup(popup_ebdc37f1c74e48418aa6e069544c2834)
+        ;
+
+        
+    
+    
+            var circle_93eb71bf2b984550b73e5ffac758100c = L.circle(
+                [40.6994253, -73.8309672],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 411.54615604458417, "stroke": true, "weight": 3}
+            ).addTo(map_0f70881568084ddf90507a76af527e2e);
+        
+    
+        var popup_e01c8862aff542dea9007fd0e9d559b4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3bfa709b3b064906b2ffd6d600b45634 = $(`<div id="html_3bfa709b3b064906b2ffd6d600b45634" style="width: 100.0%; height: 100.0%;">Neighborhood: Richmond Hill, NY,  Evictions per Capita: 3.43</div>`)[0];
+            popup_e01c8862aff542dea9007fd0e9d559b4.setContent(html_3bfa709b3b064906b2ffd6d600b45634);
+        
+
+        circle_93eb71bf2b984550b73e5ffac758100c.bindPopup(popup_e01c8862aff542dea9007fd0e9d559b4)
+        ;
+
+        
+    
+    
+            var circle_c9a7f16bae944d75a77b4ac70326f14f = L.circle(
+                [40.6994253, -73.8309672],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 515.9615462621182, "stroke": true, "weight": 3}
+            ).addTo(map_0f70881568084ddf90507a76af527e2e);
+        
+    
+        var popup_67d029a1f877496f85189cd087d846ec = L.popup({"maxWidth": "100%"});
+
+        
+            var html_90414ee500de4d089363d02938deffd7 = $(`<div id="html_90414ee500de4d089363d02938deffd7" style="width: 100.0%; height: 100.0%;">Neighborhood: South Richmond Hill, NY,  Evictions per Capita: 4.30</div>`)[0];
+            popup_67d029a1f877496f85189cd087d846ec.setContent(html_90414ee500de4d089363d02938deffd7);
+        
+
+        circle_c9a7f16bae944d75a77b4ac70326f14f.bindPopup(popup_67d029a1f877496f85189cd087d846ec)
+        ;
+
+        
+    
+    
+            var circle_5852bfa4f1844d749f2d62f42f40adcc = L.circle(
+                [40.7195942, -73.84485529999998],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 298.1081597553984, "stroke": true, "weight": 3}
+            ).addTo(map_0f70881568084ddf90507a76af527e2e);
+        
+    
+        var popup_82aa6593b93547c787494b83d35d3ca6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5763747e8ee94b1898be018a47dc4c52 = $(`<div id="html_5763747e8ee94b1898be018a47dc4c52" style="width: 100.0%; height: 100.0%;">Neighborhood: Forest Hills, NY,  Evictions per Capita: 2.48</div>`)[0];
+            popup_82aa6593b93547c787494b83d35d3ca6.setContent(html_5763747e8ee94b1898be018a47dc4c52);
+        
+
+        circle_5852bfa4f1844d749f2d62f42f40adcc.bindPopup(popup_82aa6593b93547c787494b83d35d3ca6)
+        ;
+
+        
+    
+    
+            var circle_d0a6fcf656ed4ffebb7fa1560171c334 = L.circle(
+                [40.6892698, -73.85791309999998],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 423.4746091682253, "stroke": true, "weight": 3}
+            ).addTo(map_0f70881568084ddf90507a76af527e2e);
+        
+    
+        var popup_b2912ee809e747f6a0604c52b3274614 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_26546c6bfa0348ddaf9ba65fd9e7e40c = $(`<div id="html_26546c6bfa0348ddaf9ba65fd9e7e40c" style="width: 100.0%; height: 100.0%;">Neighborhood: Woodhaven, NY,  Evictions per Capita: 3.53</div>`)[0];
+            popup_b2912ee809e747f6a0604c52b3274614.setContent(html_26546c6bfa0348ddaf9ba65fd9e7e40c);
+        
+
+        circle_d0a6fcf656ed4ffebb7fa1560171c334.bindPopup(popup_b2912ee809e747f6a0604c52b3274614)
+        ;
+
+        
+    
+    
+            var circle_e2c30dd5d5354db0a5b388c0d1eb7034 = L.circle(
+                [40.7415095, -73.9569751],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1186.220668996505, "stroke": true, "weight": 3}
+            ).addTo(map_0f70881568084ddf90507a76af527e2e);
+        
+    
+        var popup_14ce2bd4eb024b42ad0507666f309483 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a027beebcada4f63b9fb1419df4e7516 = $(`<div id="html_a027beebcada4f63b9fb1419df4e7516" style="width: 100.0%; height: 100.0%;">Neighborhood: Long Island City, NY,  Evictions per Capita: 9.89</div>`)[0];
+            popup_14ce2bd4eb024b42ad0507666f309483.setContent(html_a027beebcada4f63b9fb1419df4e7516);
+        
+
+        circle_e2c30dd5d5354db0a5b388c0d1eb7034.bindPopup(popup_14ce2bd4eb024b42ad0507666f309483)
+        ;
+
+        
+    
+    
+            var circle_c17957ee7ee047f7b32bf7f209fc9f83 = L.circle(
+                [40.7612123, -73.8651358],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 990.0647948164147, "stroke": true, "weight": 3}
+            ).addTo(map_0f70881568084ddf90507a76af527e2e);
+        
+    
+        var popup_2e0e178259994aaaae0dc1dbbd4cd08f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_120cfa7a02124183b7b3780bb9b5f3e4 = $(`<div id="html_120cfa7a02124183b7b3780bb9b5f3e4" style="width: 100.0%; height: 100.0%;">Neighborhood: East Elmhurst, NY,  Evictions per Capita: 8.25</div>`)[0];
+            popup_2e0e178259994aaaae0dc1dbbd4cd08f.setContent(html_120cfa7a02124183b7b3780bb9b5f3e4);
+        
+
+        circle_c17957ee7ee047f7b32bf7f209fc9f83.bindPopup(popup_2e0e178259994aaaae0dc1dbbd4cd08f)
+        ;
+
+        
+    
+    
+            var circle_f78ee719d1a04dc2bf8fa28297dfa97a = L.circle(
+                [40.72293705, -73.86220651513041],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 798.3014861995753, "stroke": true, "weight": 3}
+            ).addTo(map_0f70881568084ddf90507a76af527e2e);
+        
+    
+        var popup_1e2f03fb9e3a4f43b1b2b09748be96be = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7d50e2aa01e7482391bdba33039111cb = $(`<div id="html_7d50e2aa01e7482391bdba33039111cb" style="width: 100.0%; height: 100.0%;">Neighborhood: Rego Park, NY,  Evictions per Capita: 6.65</div>`)[0];
+            popup_1e2f03fb9e3a4f43b1b2b09748be96be.setContent(html_7d50e2aa01e7482391bdba33039111cb);
+        
+
+        circle_f78ee719d1a04dc2bf8fa28297dfa97a.bindPopup(popup_1e2f03fb9e3a4f43b1b2b09748be96be)
+        ;
+
+        
+    
+    
+            var circle_78fa8d617b484c70acfa99190a638221 = L.circle(
+                [40.7139415, -73.830742],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 778.4173898101211, "stroke": true, "weight": 3}
+            ).addTo(map_0f70881568084ddf90507a76af527e2e);
+        
+    
+        var popup_ae39f7fdb23a439c9974f8d9d23c7985 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_76dcd91ac5e845bea8d42a7b677e4865 = $(`<div id="html_76dcd91ac5e845bea8d42a7b677e4865" style="width: 100.0%; height: 100.0%;">Neighborhood: Kew Gardens, NY,  Evictions per Capita: 6.49</div>`)[0];
+            popup_ae39f7fdb23a439c9974f8d9d23c7985.setContent(html_76dcd91ac5e845bea8d42a7b677e4865);
+        
+
+        circle_78fa8d617b484c70acfa99190a638221.bindPopup(popup_ae39f7fdb23a439c9974f8d9d23c7985)
+        ;
+
+        
+    
+    
+            var circle_a974b8c466ae443a9b2f2dd85ce24d67 = L.circle(
+                [40.7398242, -73.93541529999997],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 267.42109339191734, "stroke": true, "weight": 3}
+            ).addTo(map_0f70881568084ddf90507a76af527e2e);
+        
+    
+        var popup_9aa9b0118cfc4601a017d457962ec9e5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_350d7d36c6fe41d79192c0c5d1e16434 = $(`<div id="html_350d7d36c6fe41d79192c0c5d1e16434" style="width: 100.0%; height: 100.0%;">Neighborhood: Sunnyside, NY,  Evictions per Capita: 2.23</div>`)[0];
+            popup_9aa9b0118cfc4601a017d457962ec9e5.setContent(html_350d7d36c6fe41d79192c0c5d1e16434);
+        
+
+        circle_a974b8c466ae443a9b2f2dd85ce24d67.bindPopup(popup_9aa9b0118cfc4601a017d457962ec9e5)
+        ;
+
+        
+    
+    
+            var circle_1b3d55fc11584c3b816a9ed3408c4dae = L.circle(
+                [40.5805104, -73.83615350000002],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 758.6400674346728, "stroke": true, "weight": 3}
+            ).addTo(map_0f70881568084ddf90507a76af527e2e);
+        
+    
+        var popup_53b178d21b974a9f9bb78654018c1813 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6afc859c3dd84e93956978eb3aff3c4b = $(`<div id="html_6afc859c3dd84e93956978eb3aff3c4b" style="width: 100.0%; height: 100.0%;">Neighborhood: Rockaway Park, NY,  Evictions per Capita: 6.32</div>`)[0];
+            popup_53b178d21b974a9f9bb78654018c1813.setContent(html_6afc859c3dd84e93956978eb3aff3c4b);
+        
+
+        circle_1b3d55fc11584c3b816a9ed3408c4dae.bindPopup(popup_53b178d21b974a9f9bb78654018c1813)
+        ;
+
+        
+    
+    
+            var circle_8709cbf26b20421bac48c826642fa0c2 = L.circle(
+                [40.7876014, -73.8459682],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 603.0895983522142, "stroke": true, "weight": 3}
+            ).addTo(map_0f70881568084ddf90507a76af527e2e);
+        
+    
+        var popup_8ae48d50a49645b2855441008f6926e7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a1d9c4b9703e43418234543c8965cf1d = $(`<div id="html_a1d9c4b9703e43418234543c8965cf1d" style="width: 100.0%; height: 100.0%;">Neighborhood: College Point, NY,  Evictions per Capita: 5.03</div>`)[0];
+            popup_8ae48d50a49645b2855441008f6926e7.setContent(html_a1d9c4b9703e43418234543c8965cf1d);
+        
+
+        circle_8709cbf26b20421bac48c826642fa0c2.bindPopup(popup_8ae48d50a49645b2855441008f6926e7)
+        ;
+
+        
+    
+    
+            var circle_28c9eb6fe7f648388a8504b8265f43c5 = L.circle(
+                [40.72315800000001, -73.912637],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 467.95123869445536, "stroke": true, "weight": 3}
+            ).addTo(map_0f70881568084ddf90507a76af527e2e);
+        
+    
+        var popup_eae83ddc17694b9392b7e1e20e6f67a1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a926044d45fe4bc1add949d6334bac27 = $(`<div id="html_a926044d45fe4bc1add949d6334bac27" style="width: 100.0%; height: 100.0%;">Neighborhood: Maspeth, NY,  Evictions per Capita: 3.90</div>`)[0];
+            popup_eae83ddc17694b9392b7e1e20e6f67a1.setContent(html_a926044d45fe4bc1add949d6334bac27);
+        
+
+        circle_28c9eb6fe7f648388a8504b8265f43c5.bindPopup(popup_eae83ddc17694b9392b7e1e20e6f67a1)
+        ;
+
+        
+    
+    
+            var circle_51b1964c6a114deca2cfcd3d8af41255 = L.circle(
+                [40.76843510000001, -73.77707740000002],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 301.31482834185533, "stroke": true, "weight": 3}
+            ).addTo(map_0f70881568084ddf90507a76af527e2e);
+        
+    
+        var popup_c4b5edc40e7b4be489dc129f63dd292d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8fe7bafce3bc4447a04e1c25ef1444e1 = $(`<div id="html_8fe7bafce3bc4447a04e1c25ef1444e1" style="width: 100.0%; height: 100.0%;">Neighborhood: Bayside, NY,  Evictions per Capita: 2.51</div>`)[0];
+            popup_c4b5edc40e7b4be489dc129f63dd292d.setContent(html_8fe7bafce3bc4447a04e1c25ef1444e1);
+        
+
+        circle_51b1964c6a114deca2cfcd3d8af41255.bindPopup(popup_c4b5edc40e7b4be489dc129f63dd292d)
+        ;
+
+        
+    
+    
+            var circle_f069968e9eab4044ab6bf807c185c953 = L.circle(
+                [40.6945474, -73.73846529999999],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 610.3763987792472, "stroke": true, "weight": 3}
+            ).addTo(map_0f70881568084ddf90507a76af527e2e);
+        
+    
+        var popup_eed26915ea0a4c1aa1e03f828c11349f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b55e0327008145a9bfd1dd9b36a0a668 = $(`<div id="html_b55e0327008145a9bfd1dd9b36a0a668" style="width: 100.0%; height: 100.0%;">Neighborhood: Cambria Heights, NY,  Evictions per Capita: 5.09</div>`)[0];
+            popup_eed26915ea0a4c1aa1e03f828c11349f.setContent(html_b55e0327008145a9bfd1dd9b36a0a668);
+        
+
+        circle_f069968e9eab4044ab6bf807c185c953.bindPopup(popup_eed26915ea0a4c1aa1e03f828c11349f)
+        ;
+
+        
+    
+    
+            var circle_f52dcc5dfebc4453b7d1197187b35536 = L.circle(
+                [40.6578815, -73.83624590000002],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 422.21202386415786, "stroke": true, "weight": 3}
+            ).addTo(map_0f70881568084ddf90507a76af527e2e);
+        
+    
+        var popup_c497465d31034e68b3a5bee2dd2445c5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7a39824dbc514b018374c6470da69e36 = $(`<div id="html_7a39824dbc514b018374c6470da69e36" style="width: 100.0%; height: 100.0%;">Neighborhood: Howard Beach, NY,  Evictions per Capita: 3.52</div>`)[0];
+            popup_c497465d31034e68b3a5bee2dd2445c5.setContent(html_7a39824dbc514b018374c6470da69e36);
+        
+
+        circle_f52dcc5dfebc4453b7d1197187b35536.bindPopup(popup_c497465d31034e68b3a5bee2dd2445c5)
+        ;
+
+        
+    
+    
+            var circle_947c7373345d431bb5cd302d264cddd8 = L.circle(
+                [40.7182153, -73.8786708876408],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 227.79403622557933, "stroke": true, "weight": 3}
+            ).addTo(map_0f70881568084ddf90507a76af527e2e);
+        
+    
+        var popup_d722028a644f4514a12a4cad163aae2d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5120d69e76734727a91fd3e2b89e02bd = $(`<div id="html_5120d69e76734727a91fd3e2b89e02bd" style="width: 100.0%; height: 100.0%;">Neighborhood: Middle Village, NY,  Evictions per Capita: 1.90</div>`)[0];
+            popup_d722028a644f4514a12a4cad163aae2d.setContent(html_5120d69e76734727a91fd3e2b89e02bd);
+        
+
+        circle_947c7373345d431bb5cd302d264cddd8.bindPopup(popup_d722028a644f4514a12a4cad163aae2d)
+        ;
+
+        
+    
+    
+            var circle_bb059669d5bc410080330d23e64ae714 = L.circle(
+                [40.753991, -73.765966],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 271.9835676594539, "stroke": true, "weight": 3}
+            ).addTo(map_0f70881568084ddf90507a76af527e2e);
+        
+    
+        var popup_1b12ee66081547098bb65098ad1c86eb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_290f00342cb742fca5e23537c46d60dd = $(`<div id="html_290f00342cb742fca5e23537c46d60dd" style="width: 100.0%; height: 100.0%;">Neighborhood: Oakland Gardens, NY,  Evictions per Capita: 2.27</div>`)[0];
+            popup_1b12ee66081547098bb65098ad1c86eb.setContent(html_290f00342cb742fca5e23537c46d60dd);
+        
+
+        circle_bb059669d5bc410080330d23e64ae714.bindPopup(popup_1b12ee66081547098bb65098ad1c86eb)
+        ;
+
+        
+    
+    
+            var circle_638fc5a586a7491dadf6c8f6bd3f0abf = L.circle(
+                [40.79454570000001, -73.81846740000002],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 237.87086081954956, "stroke": true, "weight": 3}
+            ).addTo(map_0f70881568084ddf90507a76af527e2e);
+        
+    
+        var popup_cf6eaf59a2584adfb115fa63c325b192 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_50f5b0e4680b4289b4491d0897e413cc = $(`<div id="html_50f5b0e4680b4289b4491d0897e413cc" style="width: 100.0%; height: 100.0%;">Neighborhood: Whitestone, NY,  Evictions per Capita: 1.98</div>`)[0];
+            popup_cf6eaf59a2584adfb115fa63c325b192.setContent(html_50f5b0e4680b4289b4491d0897e413cc);
+        
+
+        circle_638fc5a586a7491dadf6c8f6bd3f0abf.bindPopup(popup_cf6eaf59a2584adfb115fa63c325b192)
+        ;
+
+        
+    
+    
+            var circle_304df13bc2f3488a8d2d7ec7763e02bb = L.circle(
+                [40.724269, -73.7151313],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 189.82085656661525, "stroke": true, "weight": 3}
+            ).addTo(map_0f70881568084ddf90507a76af527e2e);
+        
+    
+        var popup_4bcc13b26f014642beb0c4245a80d7a0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_eb8ee8397727489fa1671696522ec508 = $(`<div id="html_eb8ee8397727489fa1671696522ec508" style="width: 100.0%; height: 100.0%;">Neighborhood: Bellerose, NY,  Evictions per Capita: 1.58</div>`)[0];
+            popup_4bcc13b26f014642beb0c4245a80d7a0.setContent(html_eb8ee8397727489fa1671696522ec508);
+        
+
+        circle_304df13bc2f3488a8d2d7ec7763e02bb.bindPopup(popup_4bcc13b26f014642beb0c4245a80d7a0)
+        ;
+
+        
+    
+    
+            var circle_b6a17e3ac282409488bb668bd245e1a1 = L.circle(
+                [40.7745338, -73.7412564],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 146.85635612666363, "stroke": true, "weight": 3}
+            ).addTo(map_0f70881568084ddf90507a76af527e2e);
+        
+    
+        var popup_11e9c13d99bd4c01a3afe63b9b84e6c9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_49de9ec55424466a83a45806e291a387 = $(`<div id="html_49de9ec55424466a83a45806e291a387" style="width: 100.0%; height: 100.0%;">Neighborhood: Little Neck, NY,  Evictions per Capita: 1.22</div>`)[0];
+            popup_11e9c13d99bd4c01a3afe63b9b84e6c9.setContent(html_49de9ec55424466a83a45806e291a387);
+        
+
+        circle_b6a17e3ac282409488bb668bd245e1a1.bindPopup(popup_11e9c13d99bd4c01a3afe63b9b84e6c9)
+        ;
+
+        
+    
+    
+            var circle_b9d622a83fdf44c0beff06a3d646cd3c = L.circle(
+                [40.7470463, -73.7115199],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 65.07151087914322, "stroke": true, "weight": 3}
+            ).addTo(map_0f70881568084ddf90507a76af527e2e);
+        
+    
+        var popup_bdac308dfbf945b9b9871fb6546994ba = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1c5548fe4cef400d9acc9040f291e34c = $(`<div id="html_1c5548fe4cef400d9acc9040f291e34c" style="width: 100.0%; height: 100.0%;">Neighborhood: Glen Oaks, NY,  Evictions per Capita: 0.54</div>`)[0];
+            popup_bdac308dfbf945b9b9871fb6546994ba.setContent(html_1c5548fe4cef400d9acc9040f291e34c);
+        
+
+        circle_b9d622a83fdf44c0beff06a3d646cd3c.bindPopup(popup_bdac308dfbf945b9b9871fb6546994ba)
+        ;
+
+        
+    
+    
+            var circle_14481d3a9cc0430b88d1c2212972c49e = L.circle(
+                [40.7308451, -73.6805499],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 98.84678747940693, "stroke": true, "weight": 3}
+            ).addTo(map_0f70881568084ddf90507a76af527e2e);
+        
+    
+        var popup_4b7e37bb5045471d9fed42fa23ef4def = L.popup({"maxWidth": "100%"});
+
+        
+            var html_98c8344e85bd45a980a7cd0aa3485c16 = $(`<div id="html_98c8344e85bd45a980a7cd0aa3485c16" style="width: 100.0%; height: 100.0%;">Neighborhood: New Hyde Park, NY,  Evictions per Capita: 0.82</div>`)[0];
+            popup_4b7e37bb5045471d9fed42fa23ef4def.setContent(html_98c8344e85bd45a980a7cd0aa3485c16);
+        
+
+        circle_14481d3a9cc0430b88d1c2212972c49e.bindPopup(popup_4b7e37bb5045471d9fed42fa23ef4def)
+        ;
+
+        
+    
+    
+            var circle_fcfbfbdbfab24823a8d27384148e0099 = L.circle(
+                [40.72469990000001, -73.7048024],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 37.823866859988655, "stroke": true, "weight": 3}
+            ).addTo(map_0f70881568084ddf90507a76af527e2e);
+        
+    
+        var popup_b18eed40d4234fb1abd0a1ebbd568e08 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1fbed855c7e84d77ba46585d581f44c2 = $(`<div id="html_1fbed855c7e84d77ba46585d581f44c2" style="width: 100.0%; height: 100.0%;">Neighborhood: Floral Park, NY,  Evictions per Capita: 0.32</div>`)[0];
+            popup_b18eed40d4234fb1abd0a1ebbd568e08.setContent(html_1fbed855c7e84d77ba46585d581f44c2);
+        
+
+        circle_fcfbfbdbfab24823a8d27384148e0099.bindPopup(popup_b18eed40d4234fb1abd0a1ebbd568e08)
+        ;
+
+        
+    
+    
+            var circle_73cf7da5243a42fe81083f60a633695a = L.circle(
+                [40.6781175, -73.5855381263943],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.761963341124368, "stroke": true, "weight": 3}
+            ).addTo(map_0f70881568084ddf90507a76af527e2e);
+        
+    
+        var popup_fbeaede6200949789fb1ff6611d9c7ca = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ff0575f5a04a4fef90ee03a46c004efc = $(`<div id="html_ff0575f5a04a4fef90ee03a46c004efc" style="width: 100.0%; height: 100.0%;">Neighborhood: Roosevelt, NY,  Evictions per Capita: 0.12</div>`)[0];
+            popup_fbeaede6200949789fb1ff6611d9c7ca.setContent(html_ff0575f5a04a4fef90ee03a46c004efc);
+        
+
+        circle_73cf7da5243a42fe81083f60a633695a.bindPopup(popup_fbeaede6200949789fb1ff6611d9c7ca)
+        ;
+
+        
+    
+    
+            var circle_6bef596ab1144db18dd390b78f555176 = L.circle(
+                [40.7492729, -73.6037513],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 24.091547881951414, "stroke": true, "weight": 3}
+            ).addTo(map_0f70881568084ddf90507a76af527e2e);
+        
+    
+        var popup_4935bddd1c784de09646f08dc5a5b741 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3a89a91504cb4cc8814450fe13d0e191 = $(`<div id="html_3a89a91504cb4cc8814450fe13d0e191" style="width: 100.0%; height: 100.0%;">Neighborhood: Carle Place, NY,  Evictions per Capita: 0.20</div>`)[0];
+            popup_4935bddd1c784de09646f08dc5a5b741.setContent(html_3a89a91504cb4cc8814450fe13d0e191);
+        
+
+        circle_6bef596ab1144db18dd390b78f555176.bindPopup(popup_4935bddd1c784de09646f08dc5a5b741)
+        ;
+
+        
+    
+    
+            var circle_a1b83e41f7894b58b05842461599457b = L.circle(
+                [40.80065670000001, -73.7284647],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.5, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.01321453598959, "stroke": true, "weight": 3}
+            ).addTo(map_0f70881568084ddf90507a76af527e2e);
+        
+    
+        var popup_52cacdb8026c4f799913e66abf3cdc1f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b5a6532b638a4086911bb50bf62d63cb = $(`<div id="html_b5a6532b638a4086911bb50bf62d63cb" style="width: 100.0%; height: 100.0%;">Neighborhood: Great Neck, NY,  Evictions per Capita: 0.10</div>`)[0];
+            popup_52cacdb8026c4f799913e66abf3cdc1f.setContent(html_b5a6532b638a4086911bb50bf62d63cb);
+        
+
+        circle_a1b83e41f7894b58b05842461599457b.bindPopup(popup_52cacdb8026c4f799913e66abf3cdc1f)
+        ;
+
+        
+    
+</script>
