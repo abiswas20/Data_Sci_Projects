@@ -1,0 +1,14 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[remote "Data_Sci_Projects"]
+	url = git@github.com:User/UserRepo.git
+	fetch = +refs/heads/*:refs/remotes/Data_Sci_Projects/*
+[remote "origin"]
+	url = git@github.com:abiswas20/Data_Sci_Projects.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[branch "master"]
+	remote = origin
+	merge = refs/heads/master
